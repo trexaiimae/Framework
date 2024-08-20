@@ -1,0 +1,18 @@
+[
+    {
+        "email" : "trexaiihurtado@gmai.com",
+        "password": "Admin@123",
+        "productName": "ZARA COAT 3"
+    },
+    {
+        "email" : "trexaiihurtado@gmai.com",
+        "password": "Admin@123",
+        "productName": "ADIDAS ORIGINAL"
+    },
+	
+	{
+	      "email" : "trexaiihurtado@gmai.com",
+	      "password": "Admin@123",
+	      "productName": "IPHONE 13 PRO"
+	  }
+]
