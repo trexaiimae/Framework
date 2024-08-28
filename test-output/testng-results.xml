@@ -1,155 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="10" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-20T11:28:19 CST" name="Suite" finished-at="2024-08-20T11:28:58 CST" duration-ms="38936">
+  <suite started-at="2024-08-25T15:56:18 CST" name="Default suite" finished-at="2024-08-25T15:56:18 CST" duration-ms="416">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidations.ErrorValidation()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" name="ErrorValidation" class="FrameworkPractice.ErrorValidations"/>
-        <method signature="ErrorValidations.producterror()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" name="producterror" class="FrameworkPractice.ErrorValidations"/>
-      </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="PurchaseOrder.submitOrder(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" name="submitOrder" class="FrameworkPractice.PurchaseOrder"/>
-      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@4be29ed9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-08-20T11:28:19 CST" name="Purchase Order" finished-at="2024-08-20T11:28:54 CST" duration-ms="34790">
-      <class name="FrameworkPractice.PurchaseOrder">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:19 CST" name="launchapp" finished-at="2024-08-20T11:28:22 CST" duration-ms="3198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:22 CST" name="submitOrder" data-provider="getData" finished-at="2024-08-20T11:28:27 CST" duration-ms="4634" status="PASS">
+    <test started-at="2024-08-25T15:56:18 CST" name="Default test" finished-at="2024-08-25T15:56:18 CST" duration-ms="416">
+      <class name="Cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@4be29ed9]" started-at="2024-08-25T15:56:18 CST" name="setUpClass" finished-at="2024-08-25T15:56:18 CST" duration-ms="323" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=ZARA COAT 3}]]>
+                <![CDATA[org.testng.TestRunner@1ea9f009]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:27 CST" name="tearDown" finished-at="2024-08-20T11:28:27 CST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:27 CST" name="launchapp" finished-at="2024-08-20T11:28:30 CST" duration-ms="2745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:30 CST" name="submitOrder" data-provider="getData" finished-at="2024-08-20T11:28:34 CST" duration-ms="4471" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@4be29ed9]" started-at="2024-08-25T15:56:18 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-25T15:56:18 CST" duration-ms="56" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=ADIDAS ORIGINAL}]]>
+                <![CDATA["Positive Test of submitting the order"]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:34 CST" name="tearDown" finished-at="2024-08-20T11:28:34 CST" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:34 CST" name="launchapp" finished-at="2024-08-20T11:28:37 CST" duration-ms="2720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:37 CST" name="submitOrder" data-provider="getData" finished-at="2024-08-20T11:28:42 CST" duration-ms="4528" status="PASS">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=IPHONE 13 PRO}]]>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:42 CST" name="tearDown" finished-at="2024-08-20T11:28:42 CST" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:42 CST" name="launchapp" finished-at="2024-08-20T11:28:45 CST" duration-ms="2983" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="OrderHistory(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:45 CST" name="OrderHistory" data-provider="getData" finished-at="2024-08-20T11:28:45 CST" depends-on-methods="FrameworkPractice.PurchaseOrder.submitOrder" duration-ms="553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=ZARA COAT 3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:45 CST" name="tearDown" finished-at="2024-08-20T11:28:45 CST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:45 CST" name="launchapp" finished-at="2024-08-20T11:28:50 CST" duration-ms="4329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="OrderHistory(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:50 CST" name="OrderHistory" data-provider="getData" finished-at="2024-08-20T11:28:50 CST" depends-on-methods="FrameworkPractice.PurchaseOrder.submitOrder" duration-ms="581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:50 CST" name="tearDown" finished-at="2024-08-20T11:28:50 CST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:50 CST" name="launchapp" finished-at="2024-08-20T11:28:53 CST" duration-ms="2760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="OrderHistory(java.util.HashMap)[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:53 CST" name="OrderHistory" data-provider="getData" finished-at="2024-08-20T11:28:54 CST" depends-on-methods="FrameworkPractice.PurchaseOrder.submitOrder" duration-ms="540" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Admin@123, email=trexaiihurtado@gmai.com, productName=IPHONE 13 PRO}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.PurchaseOrder@7fb95505]" started-at="2024-08-20T11:28:54 CST" name="tearDown" finished-at="2024-08-20T11:28:54 CST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- FrameworkPractice.PurchaseOrder -->
-    </test> <!-- Purchase Order -->
-    <test started-at="2024-08-20T11:28:19 CST" name="Error validations" finished-at="2024-08-20T11:28:58 CST" duration-ms="38936">
-      <class name="FrameworkPractice.ErrorValidations">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:19 CST" name="launchapp" finished-at="2024-08-20T11:28:22 CST" duration-ms="3393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method retried="true" signature="ErrorValidation()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:22 CST" name="ErrorValidation" finished-at="2024-08-20T11:28:23 CST" duration-ms="927" status="SKIP">
-          <exception class="java.lang.AssertionError">
+          <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]]]>
+              <![CDATA[The step 'I landed on Ecommerce Page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I landed on Ecommerce Page")
+public void i_landed_on_ecommerce_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Logged in with username trexaiihurtado@gmai.com and password Admin@{int}")
+public void logged_in_with_username_trexaiihurtado_gmai_com_and_password_admin(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I add product ZARA COAT {int} to  cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} message is displayed on ConfirmationPage")
+public void message_is_displayed_on_confirmation_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at FrameworkPractice.ErrorValidations.ErrorValidation(ErrorValidations.java:26)
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I landed on Ecommerce Page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I landed on Ecommerce Page")
+public void i_landed_on_ecommerce_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Logged in with username trexaiihurtado@gmai.com and password Admin@{int}")
+public void logged_in_with_username_trexaiihurtado_gmai_com_and_password_admin(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I add product ZARA COAT {int} to  cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} message is displayed on ConfirmationPage")
+public void message_is_displayed_on_confirmation_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -164,169 +118,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:23 CST" name="tearDown" finished-at="2024-08-20T11:28:23 CST" duration-ms="99" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@4be29ed9]" started-at="2024-08-25T15:56:18 CST" name="tearDownClass" finished-at="2024-08-25T15:56:18 CST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:23 CST" name="launchapp" finished-at="2024-08-20T11:28:26 CST" duration-ms="2779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method retried="true" signature="ErrorValidation()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:26 CST" name="ErrorValidation" finished-at="2024-08-20T11:28:27 CST" duration-ms="894" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at FrameworkPractice.ErrorValidations.ErrorValidation(ErrorValidations.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:27 CST" name="tearDown" finished-at="2024-08-20T11:28:27 CST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:27 CST" name="launchapp" finished-at="2024-08-20T11:28:30 CST" duration-ms="2851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="ErrorValidation()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:30 CST" name="ErrorValidation" finished-at="2024-08-20T11:28:31 CST" duration-ms="859" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or passwordsss.]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at FrameworkPractice.ErrorValidations.ErrorValidation(ErrorValidations.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:31 CST" name="tearDown" finished-at="2024-08-20T11:28:31 CST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:31 CST" name="launchapp" finished-at="2024-08-20T11:28:34 CST" duration-ms="2698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="producterror()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:34 CST" name="producterror" finished-at="2024-08-20T11:28:58 CST" duration-ms="23714" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at FrameworkPractice.ErrorValidations.producterror(ErrorValidations.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- producterror -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkPractice.ErrorValidations@460ebd80]" started-at="2024-08-20T11:28:58 CST" name="tearDown" finished-at="2024-08-20T11:28:58 CST" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- FrameworkPractice.ErrorValidations -->
-    </test> <!-- Error validations -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

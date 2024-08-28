@@ -7,6 +7,10 @@
 		<include name="ErrorHandling"/>
 	</run>
 </groups>
+<listeners>
+<listener class-name="Components.Listeners"/>
+</listeners>
+
   <test thread-count="5" name="Purchase Order">
     <classes>
       <class name="FrameworkPractice.PurchaseOrder"/>

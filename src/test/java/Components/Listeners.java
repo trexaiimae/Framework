@@ -37,24 +37,24 @@ public class Listeners extends baseTest implements ITestListener{
 	
 		safeThread.get().fail(result.getThrowable()); // get why it fail and which method or thread ID
 		
-//		 baseTest base = (baseTest) result.getInstance();
-//		 WebDriver driver = base.driver; // get the driver object from the baseTest instance
-//		    
+		 baseTest base = (baseTest) result.getInstance();
+		 WebDriver driver = base.driver; // get the driver object from the baseTest instance
+		    
 		
-		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-		} catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-		
+//		try {
+//			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+//		} catch (Exception e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
 		
 		 
 		
 		//Screenshot and attach to the report
 		String filePath = null;
 		try {
-			filePath = getScreenshot(result.getMethod().getMethodName(), driver);
+			filePath = base.getScreenshot(result.getMethod().getMethodName(), driver);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

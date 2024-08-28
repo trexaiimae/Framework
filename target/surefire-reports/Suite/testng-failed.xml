@@ -4,6 +4,18 @@
   <listeners>
     <listener class-name="Components.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="Purchase Order(failed)" verbose="0">
+    <classes>
+      <class name="FrameworkPractice.PurchaseOrder">
+        <methods>
+          <include name="launchapp"/>
+          <include name="tearDown"/>
+          <include name="OrderHistory"/>
+          <include name="submitOrder" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- FrameworkPractice.PurchaseOrder -->
+    </classes>
+  </test> <!-- Purchase Order(failed) -->
   <test thread-count="5" parallel="tests" name="Error validations(failed)" verbose="0">
     <classes>
       <class name="FrameworkPractice.ErrorValidations">
